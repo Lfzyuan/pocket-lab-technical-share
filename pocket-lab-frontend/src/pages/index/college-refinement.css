@@ -1,0 +1,29 @@
+/* 2026-11-02: college identity and compact, readable information hierarchy. */
+.portal .sidebar .university-brand{align-items:center;text-align:center;width:100%;box-sizing:border-box;margin:0 auto 30px;gap:12px}
+.portal .sidebar .university-brand__title{white-space:normal;font-size:16px;line-height:1.6;max-width:170px}
+.portal .side-caption{display:block;text-align:center;width:100%;box-sizing:border-box;letter-spacing:2px}
+.portal .nav-item{gap:13px}.portal .nav-item image{width:22px;height:22px;flex-shrink:0}
+.equipment-list-entry{display:flex;align-items:center;gap:0;padding-left:16px;text-align:left}
+.equipment-list-thumbnail{flex-shrink:0;width:64px;height:56px;border:1px solid #e2e8ef;border-radius:7px;background:#f2f5f8}
+.equipment-list-entry .equipment-list-body{min-width:0;flex:1}
+.portal .equipment-list .equipment-card:hover{background:#f7fafd}
+.portal .equipment-card:focus-visible,.portal .nav-item:focus-visible{outline:2px solid #46718f;outline-offset:-2px}
+.portal .footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 18px;font-size:12px;line-height:1.8}
+.portal .loading{line-height:1.8}
+@media(max-width:1200px) and (min-width:761px){.portal .sidebar .university-brand__title{font-size:15px;max-width:168px}}
+@media(max-width:760px){.equipment-list-entry{padding-left:12px}.equipment-list-thumbnail{width:48px;height:48px}.equipment-list-entry .equipment-list-body{padding-left:10px}.equipment-list-heading{align-items:flex-start;gap:7px}.equipment-list-location{font-size:11px}.portal .footer{display:block;padding-bottom:4px}.portal .footer>text{display:block;margin-top:5px}}
+
+
+@media(max-width:760px){
+  .portal .field,
+  .portal .choice-select,
+  .portal .date-time-field,
+  .portal input,
+  .portal textarea,
+  .portal select{
+    font-size:16px!important;
+  }
+}
+
+.portal .topbar .connection{font-size:12px;white-space:nowrap}
+@media(max-width:760px){.portal .topbar .connection>text{display:none}.portal .topbar .connection>.text-btn{min-height:40px;padding:5px 4px}}

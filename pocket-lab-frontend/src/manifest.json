@@ -1,0 +1,24 @@
+{
+  "appid": "",
+  "versionCode": "300",
+  "vueVersion": "3",
+  "transformPx": false,
+  "name": "口袋实验室",
+  "description": "共享后端的学院实验室综合服务",
+  "versionName": "0.3.0",
+  "mp-weixin": {
+    "appid": "",
+    "setting": {
+      "urlCheck": true
+    }
+  },
+  "h5": {
+    "title": "口袋实验室",
+    "router": {
+      "mode": "hash"
+    }
+  },
+  "uniStatistics": {
+    "enable": false
+  }
+}
