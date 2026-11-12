@@ -1,0 +1,60 @@
+html[data-design="new"] .portal .profile-panel { max-width: 760px; }
+.account-security-entry { display: flex; gap: 14px; align-items: center; margin-top: 29px; padding-top: 25px; border-top: 1px solid #e7ebf2; }
+.account-security-icon { width: 42px; height: 42px; flex-shrink: 0; background: #edf2fd; color: #728ac2; border-radius: 11px; display: grid; place-items: center; font-size: 24px; }
+.account-security-copy { flex: 1; min-width: 0; }
+.account-security-copy h3 { margin: 0 0 4px; font-size: 14px; font-weight: 600; color: #40516d; }
+.account-security-copy p { margin: 0; font-size: 11px; line-height: 1.8; color: #8b98ad; }
+html[data-design="new"] .portal .account-security-entry .security-open { font-size: 12px; min-height: 36px; white-space: nowrap; }
+.security-dialog { width: 470px; max-width: calc(100vw - 36px); max-height: calc(100dvh - 36px); margin: auto; overflow: auto; padding: 30px; border: 1px solid #e3e9f4; border-radius: 17px; color: #34445e; background: #fff; box-shadow: 0 28px 100px #10234433; font: 13px/1.7 "Segoe UI", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif; box-sizing: border-box; }
+.security-dialog * { box-sizing: border-box; }
+.security-dialog [hidden] { display: none !important; }
+.security-dialog::backdrop { background: #15264177; backdrop-filter: blur(4px); }
+.security-close { position: absolute; top: 15px; right: 15px; display: grid; place-items: center; width: 32px; height: 32px; padding: 0; border: 0; border-radius: 50%; color: #8c99ae; background: #f5f7fb; font: 22px/1 sans-serif; cursor: pointer; }
+.security-heading { display: flex; align-items: center; gap: 13px; margin-bottom: 25px; padding-right: 12px; }
+.security-lock { width: 40px; height: 45px; display: grid; place-items: center; background: #eff3ff; border-radius: 12px; font-size: 22px; color: #6d87cd; flex-shrink: 0; }
+.security-heading h2 { font-size: 21px; font-weight: 600; margin: 0 0 4px; color: #2e405d; }
+.security-heading p { margin: 0; color: #8b99af; font-size: 11px; }
+.security-field { margin-bottom: 19px; }
+.security-field label { display: block; font-size: 12px; font-weight: 500; color: #5d6f8d; margin-bottom: 8px; }
+.security-input-wrap { display: flex; align-items: center; border: 1px solid #dce4ef; background: #fcfdff; border-radius: 8px; overflow: hidden; transition: border-color 180ms, box-shadow 180ms; }
+.security-input-wrap:focus-within { border-color: #819aed; box-shadow: 0 0 0 3px #4264eb10; }
+.security-input-wrap:has(input[aria-invalid="true"]) { border-color: #d88d8d; box-shadow: 0 0 0 3px #cb626209; }
+.security-input-wrap input { width: 100%; min-width: 0; height: 45px; padding: 10px 13px; border: 0; outline: none; background: transparent; font: inherit; font-size: 13px; color: #3b4b67; }
+.security-input-wrap input::placeholder { color: #a4aec0; }
+.security-eye { display: grid; place-items: center; width: 43px; height: 43px; padding: 0; background: transparent; border: 0; flex-shrink: 0; cursor: pointer; border-radius: 7px; }
+.security-eye img { width: 19px; height: 19px; opacity: .75; }
+.security-help { margin: 7px 0 0; font-size: 10px; color: #94a1b6; }
+.security-field-error { color: #c27474; font-size: 11px; line-height: 1.8; margin: 7px 0 0; }
+.security-session-note { font-size: 11px; color: #8f9db2; margin: 0 0 17px; }
+.security-demo-note { padding: 11px 13px; background: #f4f7fd; border: 1px solid #e8eef9; border-radius: 8px; font-size: 10px; color: #8b9ab1; margin-bottom: 19px; }
+.security-demo-note strong { display: block; margin-bottom: 4px; font-weight: 500; color: #7488ac; }
+.security-demo-note code { color: #5a749e; font-size: 11px; }
+.security-status { padding: 11px 13px; border: 1px solid #f0dadd; background: #fff7f8; color: #b4777c; border-radius: 8px; font-size: 12px; margin: 0 0 15px; }
+.security-actions { display: flex; justify-content: flex-end; gap: 10px; padding-top: 4px; }
+.security-button { display: inline-flex; align-items: center; justify-content: center; min-width: 86px; min-height: 41px; padding: 9px 17px; border: 1px solid #dce4f0; border-radius: 8px; background: #fff; color: #7585a1; font: inherit; font-size: 12px; cursor: pointer; transition: background 180ms, transform 180ms, box-shadow 180ms; }
+.security-button--primary { color: #fff; background: #4264eb; border-color: #4264eb; }
+.security-button:not(:disabled):hover { box-shadow: 0 4px 13px #4164e51c; }
+.security-button:not(:disabled):active { transform: scale(.98); }
+.security-dialog button:disabled { opacity: .6; cursor: wait; }
+.security-dialog button:focus-visible { outline: 3px solid #f1bd66; outline-offset: 2px; }
+.security-complete { text-align: center; padding: 8px 0 6px; }
+.security-complete-icon { display: grid; place-items: center; width: 58px; height: 58px; margin: 4px auto 18px; border-radius: 50%; background: #eaf6f1; color: #5a9d86; font-size: 28px; }
+.security-complete h3 { font-size: 18px; color: #425670; margin: 0 0 8px; font-weight: 600; }
+.security-complete p { color: #8c9bb0; font-size: 12px; margin: 0 0 26px; }
+.security-complete .security-button { width: 100%; }
+html[data-motion="on"] .security-dialog[open] { animation: security-dialog-in 220ms cubic-bezier(.22,1,.36,1); }
+@keyframes security-dialog-in { from { opacity: 0; transform: translateY(10px) scale(.98); } to { opacity: 1; transform: none; } }
+@media (max-width: 760px) {
+  .account-security-entry { gap: 11px; flex-wrap: wrap; margin-top: 24px; padding-top: 21px; }
+  .account-security-icon { width: 36px; height: 39px; }
+  .account-security-copy { flex-basis: calc(100% - 50px); }
+  html[data-design="new"] .portal .account-security-entry .security-open { margin-left: 47px; }
+  .security-dialog { padding: 25px 22px; max-width: calc(100vw - 28px); max-height: calc(100dvh - 28px); border-radius: 14px; }
+  .security-heading { margin-top: 6px; gap: 10px; }
+  .security-heading h2 { font-size: 19px; }
+  .security-heading p { font-size: 10px; }
+  .security-lock { width: 36px; height: 41px; }
+  .security-actions .security-button { flex: 1; }
+}
+@media (prefers-reduced-motion: reduce) { .security-dialog, .security-dialog * { animation: none !important; transition: none !important; } }
+html[data-motion="off"] .security-dialog, html[data-motion="off"] .security-dialog * { animation: none !important; transition: none !important; }

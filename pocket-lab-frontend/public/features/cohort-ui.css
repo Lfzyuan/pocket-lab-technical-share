@@ -1,0 +1,63 @@
+
+.cohort-active > .user-search, .cohort-active > .panel:has(.user-row), .cohort-active > .pager { display:none!important; }
+.cohort-management { margin-bottom:24px; color:#405677; }
+.cohort-toolbar { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:20px; }
+.cohort-toolbar h2 { margin:0 0 7px; font-size:16px; font-weight:600; }
+.cohort-toolbar p { margin:0; color:#8c9ab1; font-size:12px; }
+.cohort-tabs { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px; }
+.cohort-tabs button { padding:9px 18px; background:white; border:1px solid #dde5f2; border-radius:8px; font:inherit; font-size:12px; color:#7e8faa; cursor:pointer; }
+.cohort-tabs button[aria-pressed=true] { color:#4264db; border-color:#aebff2; background:#eef3ff; }
+.cohort-search { display:flex; align-items:center; gap:20px; margin-bottom:18px; }
+.cohort-search input { flex:1; max-width:420px; min-width:0; padding:12px 14px; border:1px solid #dce4f1; border-radius:8px; color:#405677; background:white; font:inherit; font-size:12px; }
+.cohort-count { color:#8f9cb0; font-size:12px; white-space:nowrap; }
+.cohort-list { border:1px solid #e0e7f2; background:white; border-radius:13px; padding:0 24px; }
+.cohort-row { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid #eaf0f7; }
+.cohort-row:last-child { border-bottom:0; }
+.cohort-person { min-width:0; }
+.cohort-person strong { font-size:14px; font-weight:600; color:#304b70; }
+.cohort-badge { font-size:10px; margin-left:9px; padding:3px 7px; border-radius:4px; background:#eef3ff; color:#6483b8; }
+.cohort-person p { margin:8px 0 5px; font-size:12px; color:#7d8eaa; overflow-wrap:anywhere; }
+.cohort-person small { color:#9aa7ba; font-size:11px; }
+.cohort-row-actions { display:flex; gap:10px; flex-shrink:0; align-items:center; }
+.cohort-row-actions button, .cohort-bulk { padding:9px 12px; border:1px solid #dce5f3; border-radius:7px; background:#f7f9fe; font:inherit; font-size:12px; color:#6e86b0; cursor:pointer; }
+.cohort-row-actions .cohort-delete, .cohort-bulk { background:#fff8f8; color:#bd7479; border-color:#f0dbdd; }
+.cohort-row-actions span { font-size:11px; color:#99a5b7; }
+.cohort-message { font-size:12px; color:#558b77; margin:0 0 15px; }
+.cohort-message:empty { display:none; }
+.cohort-empty { text-align:center; padding:38px 12px; font-size:13px; color:#95a1b4; }
+.cohort-dialog { width:480px; max-width:calc(100vw - 28px); max-height:calc(100dvh - 28px); box-sizing:border-box; margin:auto; overflow:auto; border:1px solid #e1e6ef; border-radius:16px; padding:28px; color:#667994; background:white; font:13px/1.8 "Microsoft YaHei",sans-serif; box-shadow:0 24px 90px #142b4833; }
+.cohort-dialog::backdrop { background:#15264177; backdrop-filter:blur(3px); }
+.cohort-dialog h2 { font-size:21px; color:#435777; margin:0 0 12px; }
+.cohort-dialog ul { max-height:180px; overflow:auto; padding:12px 12px 12px 30px; background:#f5f7fb; border-radius:8px; }
+.cohort-delete-note { font-size:12px; color:#93a0b3; }
+.cohort-confirm-label { display:block; font-size:12px; margin:20px 0; }
+.cohort-confirm-label input { display:block; box-sizing:border-box; width:100%; padding:11px; margin-top:8px; border:1px solid #dce4f0; border-radius:8px; font:inherit; }
+.cohort-dialog form > div { display:flex; justify-content:flex-end; gap:10px; margin-top:24px; }
+.cohort-dialog button { border:1px solid #dce4ef; background:white; color:#7b8ca6; border-radius:8px; padding:9px 20px; font:inherit; cursor:pointer; }
+.cohort-dialog .cohort-confirm { background:#bd666f; border-color:#bd666f; color:white; }
+.cohort-delete-error { color:#b76a71; font-size:12px; }
+.cohort-management button:disabled, .cohort-dialog button:disabled { opacity:.5; cursor:default; }
+.cohort-management [hidden], .cohort-dialog [hidden] { display:none!important; }
+.cohort-management button:focus-visible, .cohort-dialog button:focus-visible { outline:3px solid #e4b25f; outline-offset:2px; }
+@media(max-width:760px) { .cohort-toolbar { align-items:flex-start; flex-direction:column; }.cohort-row { align-items:flex-start; flex-direction:column; gap:13px; }.cohort-row-actions { flex-wrap:wrap; }.cohort-list { padding:0 18px; }.cohort-search { gap:10px; }.cohort-tabs button { padding:8px 12px; }.cohort-dialog { padding:22px; } }
+
+.cohort-dialog form > .cohort-blockers { display:block; max-height:200px; overflow:auto; margin:12px 0; padding:0; }
+.cohort-blockers section { padding:12px 14px; margin-bottom:8px; border:1px solid #eedbd8; border-radius:8px; background:#fff8f5; }
+.cohort-blockers strong { font-weight:500; font-size:12px; color:#a47a6e; }
+.cohort-blockers p { margin:5px 0 0; font-size:11px; color:#a18f88; }
+
+.cohort-retention-note { margin:16px 0 0; padding:10px 13px; border-radius:8px; border:1px solid #f0dfbd; background:#fff9ed; color:#a17b40; font-size:13px; font-weight:500; }
+
+.cohort-bulk-actions { display:flex; gap:10px; flex-wrap:wrap; }
+.cohort-bulk-disable { padding:9px 12px; border:1px solid #dce5f3; border-radius:7px; background:#f7f9fe; font:inherit; font-size:12px; color:#6e86b0; cursor:pointer; }
+.cohort-dialog .cohort-disable-confirm { background:#526fbd; border-color:#526fbd; color:white; }
+
+.cohort-filter-group { display:flex; gap:16px; align-items:flex-start; margin-bottom:14px; }
+.cohort-filter-group h3 { flex:0 0 84px; margin:10px 0 0; color:#647b9b; font-size:12px; font-weight:500; }
+.cohort-filter-group .cohort-tabs { margin:0; flex:1; min-width:0; }
+.cohort-retry { display:block; margin:0 auto 20px; padding:9px 16px; border:1px solid #dce5f3; border-radius:7px; background:#f7f9fe; color:#526fbd; cursor:pointer; }
+@media(max-width:760px) { .cohort-filter-group { flex-direction:column; gap:8px; }.cohort-filter-group h3 { flex:none; margin:0; }.cohort-search { flex-wrap:wrap; }.cohort-search input { flex-basis:100%; max-width:none; }.cohort-count { white-space:normal; }.cohort-person small { overflow-wrap:anywhere; } }
+
+.cohort-class-select{min-width:180px;max-width:100%;padding:7px 9px;border:1px solid #d7e1eb;border-radius:7px;background:#fff;color:#35506c}
+.cohort-edit-profile label{display:grid;gap:4px;margin:8px 0}
+.cohort-edit-profile label input{width:100%;padding:7px;border:1px solid #d7e1eb;border-radius:6px;box-sizing:border-box}

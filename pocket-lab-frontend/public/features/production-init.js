@@ -1,0 +1,3 @@
+window.pocketLabSecurityConfig={enabled:true,demo:false,endpoint:'/api/me/password'};
+// Hydrate the existing session before the compiled Vue application reads it.
+try{const key='pocket-lab-live-session-v1',wrapped=JSON.parse(localStorage.getItem(key)||'null');if(wrapped?.data?.accessToken){const req=new XMLHttpRequest();req.open('GET','/api/me',false);req.setRequestHeader('Authorization','Bearer '+wrapped.data.accessToken);req.send();if(req.status===200){wrapped.data.user=JSON.parse(req.responseText).data;localStorage.setItem(key,JSON.stringify(wrapped));}else if(req.status===401){localStorage.removeItem(key);}}}catch{}

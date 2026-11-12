@@ -1,0 +1,25 @@
+.account-view-switch { margin-top: auto; color: #dce5f6; position: relative; padding-top: 30px; }
+.account-view-switch summary { display: flex; align-items: center; gap: 10px; padding: 13px 10px; border: 1px solid #ffffff1c; border-radius: 12px; cursor: pointer; list-style: none; background: #ffffff09; }
+.account-view-switch summary::-webkit-details-marker { display: none; }
+.account-view-avatar { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: #395a9a; }
+.account-view-switch strong { display: block; font-size: 13px; font-weight: 500; }
+.account-view-switch small { display: block; font-size: 11px; color: #9aabc7; margin-top: 4px; }
+.account-view-chevron { margin-left: auto; }
+.account-view-menu { position: absolute; bottom: 78px; left: 0; right: 0; border: 1px solid #dce4f3; border-radius: 12px; padding: 14px; background: white; color: #64738c; box-shadow: 0 8px 35px #10234430; z-index: 50; }
+.account-view-menu p { font-size: 11px; line-height: 1.8; margin: 0 0 10px; }
+.account-view-menu button, .management-grant button { border: 1px solid #d9e2f8; border-radius: 7px; background: #f2f5ff; color: #4264d9; padding: 9px 12px; font: inherit; font-size: 12px; cursor: pointer; }
+.account-view-menu button { width: 100%; }
+.account-view-menu [role=status] { display: block; font-size: 11px; color: #b06060; }
+.management-grant { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.management-grant span { font-size: 11px; color: #7589a5; }
+.management-grant small { flex-basis: 100%; color: #518577; font-size: 11px; }
+.management-grant small:empty { display: none; }
+.management-grant button:disabled { opacity: .5; cursor: wait; }
+.account-view-menu [hidden], .modal .chip[hidden] { display: none !important; }
+@media(max-width:760px) {
+  .account-view-switch { position: fixed; left: 12px; bottom: 79px; width: 160px; padding: 0; z-index: 60; background: #1a2942; border-radius: 12px; }
+  .sidebar:has(.account-view-switch) { display: contents !important; }
+  .sidebar:has(.account-view-switch) > :not(.account-view-switch) { display: none !important; }
+  .account-view-menu { width: 220px; bottom: 72px; }
+  .management-grant { flex-basis: 100%; }
+}

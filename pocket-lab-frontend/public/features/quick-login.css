@@ -1,0 +1,10 @@
+.preview-quick-login { margin-top: 20px; padding-top: 18px; border-top: 1px solid #e5eaf3; }
+.preview-quick-login p { margin: 0 0 10px; font-size: 11px; color: #8492aa; }
+.preview-quick-login > div { display: flex; gap: 9px; }
+.preview-quick-login button { flex: 1; padding: 8px 12px; border: 1px solid #dae3f5; border-radius: 7px; color: #526b9f; background: #f4f7fd; font: 12px/1.5 "Microsoft YaHei", sans-serif; cursor: pointer; transition: background .18s, transform .18s; }
+.preview-quick-login button:hover { background: #e9effd; }
+.preview-quick-login button:active { transform: scale(.97); }
+.preview-quick-login button:disabled { opacity: .55; cursor: wait; }
+.preview-quick-login button:focus-visible { outline: 2px solid #4264eb; outline-offset: 2px; }
+.preview-quick-login small { display: block; margin-top: 8px; color: #997171; font-size: 11px; }
+.preview-quick-login small:empty { display: none; }

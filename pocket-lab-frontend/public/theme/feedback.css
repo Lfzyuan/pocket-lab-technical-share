@@ -1,0 +1,70 @@
+/* Preserve the deployed deep-blue design, improve readability and semantics only. */
+html[data-design="new"] .portal{--lab-muted:#4c5e78}
+html[data-design="new"] .portal .sidebar .university-brand__title{color:#eef3fc;font-size:15px;font-weight:600;letter-spacing:.1px;white-space:normal;max-width:200px;line-height:1.7;font-family:inherit}
+html[data-design="new"] .portal .sidebar .brand::after{content:"Pocket Lab";letter-spacing:1.6px;font-size:12px;font-weight:500}
+html[data-design="new"] .portal .auth-intro-footer{color:#c1d1eb;font-size:15px;line-height:1.8;font-weight:500}
+html[data-design="new"] .portal .auth-card>.eyebrow{color:#405470;font-size:13px}
+html[data-design="new"] .portal .auth-card>.muted,html[data-design="new"] .portal .auth-help{color:#465872;font-size:14px;line-height:1.9}
+html[data-design="new"] .portal .auth-card .field-group>uni-text{color:#293f60;font-size:15px;font-weight:600}
+html[data-design="new"] .portal .environment-note{color:#5d4c35;font-size:13px;line-height:1.9}
+html[data-design="new"] .portal .footer{font-size:13px;color:#425570}
+html[data-design="new"] .portal .muted,html[data-design="new"] .portal .small{color:#4c5e78}
+html[data-design="new"] .portal .home-stats .stat>.muted{color:#425570;font-size:14px}
+html[data-design="new"] .portal .rules-summary{display:block}.rules-links{display:flex;flex-direction:column;margin-top:10px;gap:7px}.rules-links>.text-btn{width:100%;display:flex;align-items:center;justify-content:space-between;text-align:left;gap:16px;line-height:1.8;font-size:14px!important;color:#354b70!important;padding:8px 0!important}.rules-links>.text-btn>uni-text{flex-shrink:0;font-size:12px;color:#4264b6}
+html[data-design="new"] .portal .home-duty{align-self:stretch;min-height:290px}
+html[data-design="new"] .portal .unified-page-back{display:none!important}
+@media(max-width:600px){html[data-design="new"] .portal .footer{font-size:12px}html[data-design="new"] .portal .auth-intro-footer{font-size:14px}.rules-links>.text-btn{font-size:13px!important}}
+
+html[data-design="new"] .portal .sidebar .brand{width:auto;max-width:100%;margin:0 0 30px!important;flex-shrink:0}html[data-design="new"] .portal .sidebar{overflow-x:hidden}
+
+
+/* Keep the mobile document inside the viewport and reserve the complete dock area. */
+@media(max-width:760px){
+  html[data-design="new"],
+  html[data-design="new"] body{
+    overflow-x:clip;
+    overscroll-behavior:none;
+  }
+  html[data-design="new"] .portal{
+    width:100%;
+    max-width:100%;
+    min-height:100vh;
+    min-height:100svh;
+    overflow-x:clip;
+    padding-bottom:calc(84px + env(safe-area-inset-bottom,0px));
+  }
+  html[data-design="new"] .portal.portal-auth{padding-bottom:0}
+  html[data-design="new"] .portal .workspace{
+    min-width:0;
+    width:100%;
+    max-width:100%;
+  }
+  html[data-design="new"] .portal .main{min-width:0;max-width:100%}
+  html[data-design="new"] .portal :is(.auth-page,.auth-layout,.auth-form-area,.starting){
+    min-height:100vh;
+    min-height:100svh;
+  }
+  html[data-design="new"] .portal .mobile-dock{
+    position:fixed;
+    top:auto;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:90;
+    min-height:calc(68px + env(safe-area-inset-bottom,0px));
+    width:auto;
+    margin:0;
+    transform:none;
+    background:#fff;
+    backdrop-filter:none;
+  }
+  html[data-design="new"] .portal :is(.field,.choice-select,.date-time-field,input,textarea,select){
+    font-size:16px!important;
+  }
+}
+/* Touch browsers can retain :hover after a tap. */
+@media(hover:none),(pointer:coarse){
+  html[data-design="new"] .portal :is(.btn,.stat,.equipment-card):hover{
+    transform:none!important;
+  }
+}
